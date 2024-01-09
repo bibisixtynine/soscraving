@@ -43,7 +43,7 @@ Body(
         .fontSize("50px")
         .fontFamily('Luckiest Guy')
         .foregroundColor("orange"),
-    Text("ne cherchez plus la sortie !")
+    Text("the escape game of your life")
         .fontFamily('Reenie Beanie')
         .fontSize('30px'),
     Spacer(),
