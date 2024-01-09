@@ -1,0 +1,16 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    color: blanchedalmond;
+}
+
+/* styles.css (or within a <style> tag in your HTML) */
+.custom-scrollview {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer/Edge */
+}
+
+.custom-scrollview::-webkit-scrollbar {
+    width: 0; /* Safari and Chrome */
+}
+
