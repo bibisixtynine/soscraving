@@ -1,39 +1,69 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>SOS Craving</title>
-    <style>
-      body {
-        background-color: black; /* Couleur de fond noire */
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        font-family: Arial, sans-serif;
-      }
-      .centered-container {
-        text-align: center; /* Centre le contenu du conteneur */
-      }
-      .sos-text {
-        font-size: 60px;
-        font-weight: bold;
-        color: #39ff14; /* Vert fluo */
-        margin: 0; /* Supprime la marge par défaut */
-      }
-      .sos-subtitle {
-        font-size: 20px;
-        color: orange; 
-        margin: 0; /* Supprime la marge par défaut */
-      }
-    </style>
-  </head>
-  <body>
-    <div class="centered-container">
-      <div class="sos-text">SOS CRAVING</div>
-      <div class="sos-subtitle">Une Initiative de Lolo et Jéjé</div>
-    </div>
-  </body>
-</html>
 
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    
+    <title>jyssuis.js demo</title>
+
+    <meta name="author" content="bibisixtynine">
+    <meta name="description" content="a SwiftUI like js lib" />
+    <meta name="application-name" content="jysuis-demo" />
+
+    <meta name="theme-color" content="#378844" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#378844" media="(prefers-color-scheme: dark)">
+
+    <link rel="favicon" href="logo.svg"/>
+
+    <meta name="viewport" content="viewport-fit=cover, user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1" />
+    
+    <!-- PWA - apple specific -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="WebSockets demo" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="apple-touch-icon" href="theo192.png" />
+    
+    <!-- PWA - microsoft specific -->
+    <meta name="msapplication-TileColor" content="#0000FF" />
+    <meta name="msapplication-TileImage" content="theo192.png" />
+
+    
+    <!-- if not running in localhost or file, force running https -->
+    <script>
+      console.log("🌍 protocol : " + window.location.protocol)
+      console.log("🌍 hostname : " + window.location.hostname)
+      
+      if (window.location.protocol == "https:") {
+        console.log("🔒 Running in https");
+      } else if (
+        window.location.protocol !== "https:" &&
+        window.location.hostname !== "localhost" &&
+        window.location.protocol !== "file:" &&
+        window.location.hostname !== "127.0.0.1"
+      ) {
+        window.location.protocol = "https";
+        console.log("🔒 Enforcing https");
+      } else {
+        console.log("💻 Running in localhost or file, not enforcing https");
+      }
+    </script>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts-->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital@1&display=swap');
+    </style>
+
+    <!-- MAIN scripts -->
+    <script type = "module" src="main.js"></script>
+  </head>
+
+  <body>
+  </body>
+
+</html>
