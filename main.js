@@ -34,6 +34,7 @@ Body(
         Spacer(),
             Image('logo.svg')
                 .width('200px')
+                .animateHeartbeat()
                 .onClick(() => alert('Aïe Saperlipopette !')),
         Spacer(),
     ),

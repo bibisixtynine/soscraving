@@ -273,6 +273,10 @@ function Image(src) {
             }
             return imgObj;
         },
+        animateHeartbeat: function (duration = '1s', infinite = true) {
+            imgElement.style.animation = `heartbeat ${duration} ease-in-out ${infinite ? 'infinite' : ''}`;
+            return imgObj;
+        },
     };
 
     return imgObj;
