@@ -61,11 +61,11 @@ Body(
     ),
 
     Spacer(),
-    Text("cravics.com")
+    Text("cravic.org")
         .fontSize("50px")
         .fontFamily('Luckiest Guy')
         .foregroundColor("orange"),
-    Text("the escape game of your life")
+    Text("find your Cravic !")
         .fontFamily('Reenie Beanie')
         .fontSize('30px'),
     Spacer(),
