@@ -61,7 +61,7 @@ Body(
     ),
 
     Spacer(),
-    Text("SOS CRAVING")
+    Text("cravics.com")
         .fontSize("50px")
         .fontFamily('Luckiest Guy')
         .foregroundColor("orange"),
